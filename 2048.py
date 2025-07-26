@@ -145,7 +145,19 @@ def move_row_down(col):
         merged_numbers.insert(0, 0)        
     return merged_numbers
 
-for row in board:
-    print(' '.join(str(cell) for cell in row))
+while True:
+    for row in board:
+        print(' '.join(str(cell) for cell in row))
+
+    which_direction = input("Enter move (w/a/s/d): ").lower()
+    print(which_direction)
+    if which_direction == 'w':
+        move_row_up(col)
+    elif which_direction == 'a':
+        move_row_left(row)
+    elif which_direction == 's':
+        move_row_down(col)
+    elif which_direction == 'd':
+        move_row_right(row)
 
 
