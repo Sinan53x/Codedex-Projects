@@ -86,7 +86,7 @@ def move_row_right(row):
     non_zero_numbers = []
     for number in row:
             if number != 0:
-                non_zero_numbers.insert(0, number)
+                non_zero_numbers.append(number)
 
     merged_numbers = []
 
@@ -128,7 +128,7 @@ def move_row_down(col):
     non_zero_numbers = []
     for number in col:
             if number != 0:
-                non_zero_numbers.insert(0, number)
+                non_zero_numbers.append(number)
 
     merged_numbers = []
 
